@@ -1,0 +1,90 @@
+{% extends 'layout.html' %}
+
+{% block title %}关于{% end %}
+
+{% block header %}
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">Bookshelf</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                {% block Top %}
+                <li class="active"><a href="/about">关于</a></li>
+                {% end %}
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/login">豆瓣帐号登录</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% end %}
+
+{% block main %}
+<div class="logotxt">
+    <h1><a href="/about">About</a></h1>
+    <h2 class="text-center">关于</h2>
+</div>
+<div class="box-home">
+    <div class="container">
+        <div class="raw">
+            <div class="col-sm-12">
+                <h1>Bookshelf 是什么？
+                    <span>Bookshelf 是一个书单管理应用，用户可以自由的制定自己的阅读计划和书单。</span>
+                    <span>同时 Bookshelf 还可以帮助你了解自己的阅读，统计你的阅读数据。</span>
+                </h1>
+        </div>
+        <div class="raw">
+            <div class="col-sm-12">
+                <div class="line"></div>
+            </div>
+            <div class="col-sm-12">
+                <h1>Bookshelf 的数据从哪里来？
+                    <span>Bookshelf 所有的图书数据都获取自豆瓣 API</span>
+                </h1>
+            </div>
+        </div>
+        <div class="raw">
+            <div class="col-sm-12">
+                <div class="line"></div>
+            </div>
+            <div class="col-sm-12">
+                <h1>Bookshelf 具体有哪些功能？
+                    <span>如下的列表：
+                        <ul>
+                            <li>自顶书单</li>
+                            <li>自定读书计划</li>
+                            <li>统计阅读数据（本数、时长、章节数）</li>
+                            <li>同步阅读状态到豆瓣</li>
+                            <li>搜索图书信息</li>
+                        </ul>
+                    </span>
+            </div>
+        </div>
+        <div class="raw">
+            <div class="col-sm-12">
+                <div class="line"></div>
+            </div>
+            <div class="col-sm-12">
+                <h1>Bookshelf 收费吗？
+                    <span>当然不，Bookshelf 将会一直免费。这只是个我个人的项目，如果你觉得好用，可以考虑给我捐款让我买本书看 :-D</span>
+                    <span>支付宝账户：ghzpotato@gmail.com</span>
+            </div>
+        </div>
+        <div class="raw">
+            <div class="col-sm-12" id="footer">
+                Source code <a href="https://github.com/JmPotato/Bookshelf">Bookshelf</a>
+                <span>&bull;</span>
+                Made by <a href="http://ipotato.me">JmPotato</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% end %}\]

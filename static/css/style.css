@@ -1,0 +1,128 @@
+body {
+	background-color:#EEEEEE;
+	background:url(http://bookshelf.qiniudn.com/bookshelf.jpg);
+	background-size:100%;
+	background-repeat:no-repeat;
+}
+h1 {
+	font-size:45px;
+}
+h1 span {
+	display:block;
+	color:#a3a7a9;
+	font-size:20px;
+	margin-top:10px;
+}
+ul {
+	margin-top:20px;
+	list-style-type:disc;
+	list-style-position:inside;
+}
+ul li {
+	font-size:18px;
+	line-height:2.0;
+}
+.navbar-default {
+	border-color:#f8f8f8;
+}
+.navbar-default .navbar-brand {
+	font-size:20px;
+}
+.navbar-default .navbar-nav>li>a {
+	font-size:15px;
+}
+#main {
+	margin-top:70px;
+}
+.logotxt {
+	position:relative;
+	top:120px;
+	left:5px;
+	right:5px;
+	text-align:center;
+}
+.logotxt a {
+	font-family:AvenirNext-Bold;
+	font-weight:700;
+	color:#fff;
+	font-size:70px;
+	text-shadow:1px 1px 1px #000000;
+}
+.logotxt h2 {
+	color:#fff;
+	padding:0;
+	margin:0 0 45px;
+	font-weight:100;
+	font-size:34px;
+	text-align:center;
+	text-shadow:2px 2px 2px #000000;
+}
+.box-home {
+    position:relative;
+    top:300px;
+	background-color:white;
+	margin-bottom:20px;
+	overflow:hidden;
+	padding:14px;
+	border-bottom:2px solid #e2e2e9;
+	word-break:break-all;
+}
+.box {
+    background-color:white;
+    border-radius:3px;
+    margin-bottom:20px;
+    box-shadow:0px 0px 0px 1px #DDD;
+    overflow:hidden;
+    padding:14px;
+    border-bottom:2px solid #e2e2e9;
+    word-break:break-all;
+}
+.box header {
+	margin-bottom:20px;
+	padding-bottom:10px;
+	border-bottom:1px solid #DDD;
+	font-weight:bold;
+	font-size:22px;
+}
+.box article {
+	}.box footer {
+	margin-top:10px;
+	padding-top:10px;
+	border-top:1px solid #DDD;
+}
+.box img {
+	max-width:100%;
+}
+.avatar {
+	float:left;
+	margin-left:5px;
+	margin-right:8px;
+}
+.username {
+    font-weight:bold;
+    font-size:20px;
+}
+.profile {
+    font-size:15px;
+}
+#profile_main {
+    height:72px;
+    font-size:15px
+}
+.line {
+	margin-top:40px;
+	border-bottom:1px solid #ebedef;
+}
+#footer {
+	font-size:15px;
+	border-top:1px solid #DDD;
+	margin-top:30px;
+	padding-top:10px;
+	padding-bottom:10px;
+	text-align:center
+}
+@media only screen and (max-width:760px) {
+	.logotxt {
+	top:30px;
+}
+}

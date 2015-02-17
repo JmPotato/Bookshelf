@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+
+{% block title %}管理{% end %}
+
+{% block content %}
+<div class="box">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="profile_main">
+                <img src="{% raw current_user['large_avatar'] %}" class="avatar">
+                <p class="username">{% raw current_user['name'] %}</p>
+                <p class="profile">加入于 {% raw handler.format_time(member['created']) %}</p>
+                <p class="profile">{% raw current_user['desc'] %}</p>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="line"></div>
+        </div>
+        <div class="col-sm-12">
+            <h2>最近在读</h2>
+        </div>
+        <div class="col-sm-12">
+            <div class="line"></div>
+        </div>
+        <div class="col-sm-12">
+            <h2>过去读过</h2>
+        </div>
+        <div class="col-sm-12">
+            <div class="line"></div>
+        </div>
+        <div class="col-sm-12">
+            <h2>现在想读</h2>
+        </div>
+</div>
+{% end %}

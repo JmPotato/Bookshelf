@@ -1,0 +1,98 @@
+{% extends 'layout.html' %}
+
+{% block title %}管理你的书单{% end %}
+
+{% block header %}
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">Bookshelf</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/about">关于</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/login">豆瓣帐号登录</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% end %}
+
+{% block main %}
+<div class="logotxt">
+    <h1><a href="/">Bookshelf</a></h1>
+    <h2 class="text-center">管理你的书单</h2>
+</div>
+<div class="box-home">
+    <div class="container">
+        <div class="raw">
+            <div class="col-sm-6">
+                <div class="container">
+                    <img src="{{ static_url('img/list.png') }}">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <h1>定制你自己的书单
+                    <span>你可以建立自己的书单</span>
+                </h1>
+                <ul>
+                    <li>制定你自己的阅读计划</li>
+                    <li>同步阅读状态到豆瓣</li>
+                    <li>统计你的阅读信息</li>
+                </ul>
+            </div>
+        </div>
+        <div class="raw">
+            <div class="col-sm-12">
+                <div class="line"></div>
+            </div>
+            <div class="col-sm-6">
+                <h1>直观的了解自己的阅读
+                    <span>知识日积月累，让看过的书籍“可视化”</span>
+                    <span>了解自己的阅读历程</span>
+                </h1>
+                <ul>
+                    <li>阅读的书籍数目</li>
+                    <li>走过的页数</li>
+                    <li>阅读时间</li>
+                </ul>
+            </div>
+            <div class="col-sm-6">
+                <img src="{{ static_url('img/chart.png') }}">
+            </div>
+        </div>
+        <div class="raw">
+            <div class="col-sm-12">
+                <div class="line"></div>
+            </div>
+            <div class="col-sm-6">
+                <img src="{{ static_url('img/book.png') }}">
+            </div>
+            <div class="col-sm-6">
+                <h1>准确的图书信息
+                    <span>Bookshelf 通过 API 从豆瓣获取数据，获得最新的图书数据</span>
+                </h1>
+                <ul>
+                    <li>图书详细信息</li>
+                    <li>图书评价</li>
+                    <li>购买链接</li>
+                </ul>
+            </div>
+        </div>
+        <div class="raw">
+            <div class="col-sm-12" id="footer">
+                Source code <a href="https://github.com/JmPotato/Bookshelf">Bookshelf</a>
+                <span>&bull;</span>
+                Made by <a href="http://ipotato.me">JmPotato</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% end %}

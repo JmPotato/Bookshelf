@@ -1,0 +1,46 @@
+{% extends '../layout.html' %}
+
+{% block header %}
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">Bookshelf</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                {% block Top %}
+                <li><a href="/dashboard/list">我的书单</a></li>
+                <li><a href="/dashboard/statistics">阅读统计</a></li>
+                {% end %}
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ current_user['name'] }}<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="/account/settings">设置</a></li>
+                        <li><a href="/logout">退出</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% end %}
+
+{% block main %}
+<div class="container" style="margin-top:100px;">
+    <div class="row">
+        <div class="col-md-12">
+            {% for type, msg in handler.get_message() %}
+            <div class="alert alert-{{ type }}" role="alert">{{ msg }}</div>
+            {% end %}
+        </div>
+    </div>
+    {% block content %}{% end %}
+</div>
+{% end %}
